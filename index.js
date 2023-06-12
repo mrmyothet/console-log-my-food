@@ -25,6 +25,7 @@ readLine.question(`What would you like to log today? `, async (item) => {
   while (!position.done) {
     const food = position.value.name;
     console.log(item, food);
+    position = it.next();
   }
 
   readLine.close();
